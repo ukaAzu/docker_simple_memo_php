@@ -24,3 +24,11 @@ function getLoginUserName(){
 
     return "";
 }
+
+function getLoginUserId(){
+    if(isset($_SESSION['user'])){
+        $id = $_SESSION['user']['id'];
+        return $id;
+    }
+    return "";
+}
